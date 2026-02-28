@@ -50,6 +50,10 @@ app.get("/test-db", async (req, res) => {
   }
 });
 
+app.get("/debug", (req, res) => {
+  res.json({ file: "THIS IS INDEX.JS" });
+});
+
 
 // ================================
 // SERVER START
