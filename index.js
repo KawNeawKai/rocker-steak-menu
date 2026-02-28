@@ -1,3 +1,4 @@
+console.log("🔥 SERVER FILE LOADED");
 // ================================
 // IMPORTS
 // ================================
@@ -54,6 +55,9 @@ app.get("/debug", (req, res) => {
   res.json({ file: "THIS IS INDEX.JS" });
 });
 
+app.get("/", (req, res) => {
+  res.send("HOME WORKING");
+});
 
 // ================================
 // SERVER START
